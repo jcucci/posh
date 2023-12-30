@@ -61,7 +61,8 @@
             "branch_identical_icon": "\uf444",
             "branch_gone_icon": "\ueab8"
           },
-          "style": "diamond",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
           "leading_diamond": "<transparent,background>\ue0b0</>",
           "template": " {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} <transparent>\ue0b1</> <#121318>\uf044 {{ .Working.String }}</>{{ end }}{{ if .Staging.Changed }} <transparent>\ue0b1</> <#121318>\uf046 {{ .Staging.String }}</>{{ end }}{{ if gt .StashCount 0 }} <transparent>\ue0b1</> <#121318>\ueb4b {{ .StashCount }}</>{{ end }} ",
           "trailing_diamond": "\ue0b0",
@@ -74,9 +75,9 @@
             "style": "austin",
             "always_enabled": false
           },
-          "invert_powerline": true,
           "style": "powerline",
-          "powerline_symbol": "\ue0b2",
+          "powerline_symbol": "\ue0b0",
+          "leading_diamond": "<transparent,background>\ue0b0</>",
           "template": " \ueba2 {{ .FormattedMs }} ",
           "type": "executiontime"
         },
@@ -86,7 +87,6 @@
           "properties": {
             "time_format": "3:04:05 PM"
           },
-          "invert_powerline": true,
           "style": "diamond",
           "template": " \uf073 {{ .CurrentDate | date .Format }} ",
           "trailing_diamond": "\ue0b0",
