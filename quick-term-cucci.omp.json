@@ -35,7 +35,7 @@
           "foreground": "#f2f3f8",
           "properties": {
             "style": "agnoster_short",
-            "max_depth": 3,
+            "max_depth": 1,
             "folder_icon": "\u2026",
             "folder_separator_icon": " <transparent>\ue0b1</> "
           },
